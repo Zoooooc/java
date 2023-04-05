@@ -14,12 +14,12 @@ public class CharString {
 		// 더하기 연산자로 문자열 연결 가능
 		System.out.println("꼬부" + "기");
 		
-		// 이스케이프
+		// 이스케이프 : \
 		// \를  " 앞에 붙여 " 의 문법적인 역할을 이스케이프해서 문자로 인식하게함
 		System.out.println("꼬부기 : \"꼬북꼬북\""); // 꼬부기 : "꼬북꼬북"
 
-		
-		
+		// 줄바꿈 : \n
+		System.out.println("꼬부기\n어니부기\n거북왕");
 		
 	}
 
