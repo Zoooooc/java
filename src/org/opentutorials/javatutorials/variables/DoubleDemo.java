@@ -13,5 +13,12 @@ public class DoubleDemo {
 		float b = 2.2f;
 		System.out.println(b);
 		
+		// 자동 형 변환
+		double c = 3.0f;
+		
+		// 자동 형 변환이 일어나는 규칙
+		// byte > short > int > long > float > double
+		//         char > int
+		
 	}
 }
