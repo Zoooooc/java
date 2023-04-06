@@ -3,9 +3,10 @@ package org.opentutorials.javatutorials.method;
 public class Method {
 
 	public static void main(String[] args) {
-		numbering();
+		numbering(); // 메소드 호출
 	}
 	
+	// 메소드
 	public static void numbering() {
 		int i = 0;
 		while(i < 10) {
@@ -13,4 +14,5 @@ public class Method {
 			i++;
 		}
 	}
+	
 }
