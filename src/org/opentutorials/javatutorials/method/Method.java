@@ -4,6 +4,10 @@ public class Method {
 
 	public static void main(String[] args) {
 		numbering(); // 메소드 호출
+		numbering();
+		numbering();
+		numbering();
+		numbering();
 	}
 	
 	// 메소드
