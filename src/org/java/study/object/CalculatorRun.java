@@ -20,11 +20,15 @@ class Calculator{
 	
 }
 
-class Test{
-	static int a = 1;
+// 유효범위
+class ThisTest{
+	int a = 1;
 	
-	static void a() {
-		System.out.println(a);
+	public void a() {
+		int a = 2;
+		
+		System.out.println(a);      // 2
+		System.out.println(this.a); // 1
 	}
 }
 
@@ -38,8 +42,10 @@ public class CalculatorRun {
 		c.sum();
 		c.avg();
 		
-		Test.a();
+		System.out.println("========");
 		
+		ThisTest tt = new ThisTest();
+		tt.a();
 		
 	}
 
