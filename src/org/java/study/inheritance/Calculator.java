@@ -59,4 +59,15 @@ public class Calculator {
 	public void syso() {
 		System.out.println("난 부모야~");
 	}
+	
+	public void overloading() {
+		System.out.println("overloading()");
+	}
+	public void overloading(String a) {
+		System.out.println("overloading(String a)");
+	}
+	public void overloading(String a, String b) {
+		System.out.println("overloading(String a, String b)");
+	}
+	
 }

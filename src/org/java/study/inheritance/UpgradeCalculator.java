@@ -37,5 +37,8 @@ public class UpgradeCalculator extends Calculator {
 		
 	}
 
+	public void overloading(int i) {
+		System.out.println("overloading(int i)");
+	}
 	
 }

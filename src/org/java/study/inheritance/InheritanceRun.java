@@ -30,6 +30,7 @@ public class InheritanceRun {
 		
 		System.out.println("============");
 		
+		// 오버라이딩
 		System.out.print("부모 : ");
 		c.syso();
 		System.out.print("자식 : ");
@@ -38,8 +39,22 @@ public class InheritanceRun {
 		System.out.println("============");
 		
 		// 오버로딩
-		UpgradeCalculator ucc = new UpgradeCalculator(10, 20, 30);
-//		System.out.println(ucc.getThird());
+		Calculator ucc = new Calculator();
+		
+		ucc.overloading();
+		ucc.overloading("a");
+		ucc.overloading("a", "b");
+		
+		System.out.println();
+		
+		UpgradeCalculator ugcc = new UpgradeCalculator(10, 20);
+		ugcc.overloading();
+		ugcc.overloading(1);
+		ugcc.overloading("a");
+		ugcc.overloading("a", "b");
+		
+		System.out.println("============");
+		
 		
 	}
 
