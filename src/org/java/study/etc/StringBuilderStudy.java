@@ -1,9 +1,9 @@
 package org.java.study.etc;
 
-public class StringBuilder {
+public class StringBuilderStudy {
 
 	public static void main(String[] args) {
-		
+			
 		// StringBuilder 클래스
 		// java에서 제공하는 StringBuilder 클래스는
 		// 단일 스레드에서는 안전, 멀티스레드에서는 불안전
@@ -23,10 +23,17 @@ public class StringBuilder {
 		// 불필요한 메모리 공간은 GC(가비지 컬렉션)에 의해 회수되지만, GC가 처리해야 하는 일이 많아집니다.
 		// String 대신 StringBuilder를 사용하면, 하나의 메모리 공간만 할당되므로 메모리 공간을 효율적으로 사용
 		
+		StringBuilder sb = new StringBuilder("Hello"); // Heap영역에 공간을 생성하여 "Hello"가 저장
+		sb.append(" World!"); // 기존 공간에 " World!" 추가
+		// String과 달리 불필요한 메모리 공간을 생성하지 않음
+		// StringBuilder는 하나의 공간으로 문자열을 관리
 		
 		
+		// https://developer-talk.tistory.com/774
 		
+			
 		
+
 	}
-	
+
 }
