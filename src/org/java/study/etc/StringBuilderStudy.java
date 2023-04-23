@@ -29,11 +29,48 @@ public class StringBuilderStudy {
 		// StringBuilder는 하나의 공간으로 문자열을 관리
 		
 		
+		// StringBuilder 객체
+		
+		// StringBuilder()
+		// 매개변수가 없는 StringBuilder() 생성자 함수는 StringBuilder 객체의 초기 용량을 16Byte로 설정
+		StringBuilder sb1 = new StringBuilder();
+		System.out.println("StringBuilder() capacity : "+sb1.capacity());
+		
+		// StringBuilder(int capacity)
+		// int 타입의 값을 StringBuilder 생성자 함수에 잔덜하면, StringBuilder 객체의 초기 용량을 설정할 수 있다.
+		StringBuilder sb2 = new StringBuilder(5);
+		System.out.println("StringBuilder(int capacity) capacity : "+sb2.capacity());
+		
+		// StringBuilder(CharSequence Seq)
+		// String 대신 CharSequence를 StringBuilder 생성자 함수에 전달할 수 있음
+		// CharSequencefmf StringBuilder 생성자 함수에 전달하는 경우 StringBuilder 객체의 초기 용량은 (매개변수로 전달된 CharSequence의 길이 +16)입니다.
+		CharSequence seq = "Hello";
+		StringBuilder sb3 = new StringBuilder(seq);
+		System.out.println("StringBuilder(CharSequence Seq) capacity : " + sb3.capacity());
+		
+		// StringBuilder(String str)
+		// StringBuilder 생성자 함수에 문자열을 전달할 수 있습니다.
+		StringBuilder sb4 = new StringBuilder("Hello");
+		System.out.println("StringBuilder(String str) capacity : "+sb4.capacity());
+		
+		// 버퍼 크기 초과 테스트
+		StringBuilder sb5 = new StringBuilder("Hello");
+		
+		System.out.println("버퍼 크기 초과 전");
+		System.out.println("capacity : " + sb5.capacity());
+		System.out.println("length : " + sb5.length());
+		
+		sb5.append(" World! Hello Java~~~!~~!");
+		
+		System.out.println("버퍼 크기 초과 후");
+		System.out.println("capacity : " + sb5.capacity());
+		System.out.println("length : " + sb5.length());
+		// StringBuilder의 객체인 sb5는 초기 버퍼 크기가 21( 5 + 16 )
+		// append메서드를 사용해 문자열을 초기 버프 크기의 21보다 크게 추가하면
+		// 버퍼의 크기는 44( (21 + 1) * 2 )로 변경
+		
+		
 		// https://developer-talk.tistory.com/774
-		
-			
-		
-
 	}
 
 }
