@@ -26,12 +26,13 @@ public class ArrayListDemo {
 		System.out.println();
 		
 		ArrayList<Integer> intArrayList = new ArrayList<>(Arrays.asList(0, 1, 2, 3, 4, 5, 6));
-	    ArrayList<Integer> newArrayList = new ArrayList<>(intArrayList.subList(2, 5));
+	    ArrayList<Integer> newArrayList = new ArrayList<>(intArrayList.subList(2, 5)); //  ArrayList의 2번째 인덱스부터 5번째 인덱스까지 포함된 요소를 가져옵니다.
 
 	    System.out.println("intArrayList: " + intArrayList);
 	    System.out.println("newArrayList: " + newArrayList);
 	
-		
+		// https://developer-talk.tistory.com/783
+	    
 	}
 	
 }
